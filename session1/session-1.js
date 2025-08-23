@@ -20,6 +20,7 @@ let isMayor = false // true // BOOLEAN
 
 // CONCATENACIONES
 
+console.log('hola, ' + nombre + ' ' + apellido + ' y tengo ' + edad + ' años')
 console.log(`Hola, mi nombre es ${nombre} y tengo ${edad} años`)
 
 // OPERACIONES BASICAS
@@ -27,6 +28,8 @@ console.log(`Hola, mi nombre es ${nombre} y tengo ${edad} años`)
 // SUMAR
 let a = 5
 let b = 10
+
+// SUMAR
 let suma = a + b 
 console.log('Suma:', suma)
 
