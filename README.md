@@ -43,7 +43,7 @@ Si encuentras algún error o tienes sugerencias, no dudes en crear un issue o en
 
 ## ✨ Autor
 
-[Tu nombre]
+Jorge Antonio
 
 ## 📄 Licencia
 
