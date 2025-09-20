@@ -1,0 +1,63 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  padding: 30px;
+  background: #f4f1ea; /* tono cálido, tipo galería */
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+.poster {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.poster:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.poster img {
+  width: 100%;
+  display: block;
+}
+.autor {
+  padding: 10px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  background: #fafafa;
+  color: #555;
+  border-top: 1px solid #eee;
+}
+button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 25px;
+  border: none;
+  background: #333;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #555;
+}
