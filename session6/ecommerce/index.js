@@ -23,6 +23,10 @@ async function fetchProducts() {
                     <img class="product-image" src="${product.image}" alt="${product.title}">
                     <h2 class="product-title">${product.title}</h2>
                 </a>
+                <p class="product-price">S/.${product.price}</p>
+                <button class="product-add" onclick="addToCart(${product.id})" type="button">
+                    Agregar al carrito
+                </button>
             </div>        
         `
         productContainer.appendChild(productElement)
@@ -32,5 +36,12 @@ async function fetchProducts() {
 
 // Inicializamos la peticion
 fetchProducts()
+
+function addToCart(productId) {
+    const product = products.find(p => p.id === productId)
+    if (!product) return
+    addProductToCart(product, 1)
+    showAddToCartNotification(product.title)
+}
 
 updateCartCount()
